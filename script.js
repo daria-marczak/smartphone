@@ -13,9 +13,8 @@ Phone.prototype.printInfo = function() {
 	console.log("The phone brand is " + this.brand + ", color is " + this.color + " and its price is " + this.price + ". Its display is " + this.display +  " and its type of person identification is " + this.identification + ".");
 }
 
-Phone.prototype.applyDiscount = function getDiscount(discount) {
-	price = this.price - discount;
-	console.log(price)
+Phone.prototype.applyDiscount = function(discount) {
+	this.price = this.price - discount;
 }
 
 
@@ -30,3 +29,7 @@ HuaweiP9Lite.printInfo();
 SamsungGalaxyS6.printInfo();
 
 iPhoneX.applyDiscount(200);
+iPhoneX.printInfo();
+
+HuaweiP9Lite.applyDiscount(500);
+HuaweiP9Lite.printInfo();
