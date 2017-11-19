@@ -1,6 +1,3 @@
-var priceAfterDiscount;
-var discount;
-
 function Phone(brand, price, color, display, identification) {
 	this.brand = brand;
 	this.price = price;
@@ -18,18 +15,18 @@ Phone.prototype.applyDiscount = function(discount) {
 }
 
 
-var iPhoneX = new Phone("Apple", 2250, "space gray", "5.8in", "Face ID");
-var HuaweiP9Lite = new Phone("Huawei", 1940, "white", "4.8in", "finger ID");
-var SamsungGalaxyS6 = new Phone("Samsung", 1399, "black", "3.9in", "swipe");
+var iPhoneX = new Phone("Apple", 2250, "space gray", "5.8\''", "Face ID");
+var huaweiP9Lite = new Phone("Huawei", 1940, "white", "4.8\''", "finger ID");
+var samsungGalaxyS6 = new Phone("Samsung", 1399, "black", "3.9\''", "swipe");
 
 iPhoneX.printInfo();
 
-HuaweiP9Lite.printInfo();
+huaweiP9Lite.printInfo();
 
-SamsungGalaxyS6.printInfo();
+samsungGalaxyS6.printInfo();
 
 iPhoneX.applyDiscount(200);
 iPhoneX.printInfo();
 
-HuaweiP9Lite.applyDiscount(500);
-HuaweiP9Lite.printInfo();
+huaweiP9Lite.applyDiscount(500);
+huaweiP9Lite.printInfo();
