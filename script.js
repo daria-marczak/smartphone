@@ -15,9 +15,9 @@ Phone.prototype.applyDiscount = function(discount) {
 }
 
 
-var iPhoneX = new Phone("Apple", 2250, "space gray", "5.8\''", "Face ID");
-var huaweiP9Lite = new Phone("Huawei", 1940, "white", "4.8\''", "finger ID");
-var samsungGalaxyS6 = new Phone("Samsung", 1399, "black", "3.9\''", "swipe");
+var iPhoneX = new Phone("Apple", 2250, "space gray", "5.8''", "Face ID");
+var huaweiP9Lite = new Phone("Huawei", 1940, "white", "4.8''", "finger ID");
+var samsungGalaxyS6 = new Phone("Samsung", 1399, "black", "3.9''", "swipe");
 
 iPhoneX.printInfo();
 
